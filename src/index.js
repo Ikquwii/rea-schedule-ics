@@ -9,7 +9,8 @@ const DEBUG_DIR = 'public/debug';
 
 async function main() {
   console.log('[index] Starting schedule build...');
-  const weekTexts = await scrapeSchedule();
+  await fs.mkdir(DEBUG_DIR, { recursive: true });
+  const weekTexts = await scrapeSchedule({ debugHtmlPath: `${DEBUG_DIR}/page.html` });
   console.log(`[index] Got ${weekTexts.length} week dumps`);
 
   await fs.mkdir(DEBUG_DIR, { recursive: true });
