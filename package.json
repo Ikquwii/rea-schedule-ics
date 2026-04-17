@@ -1,0 +1,19 @@
+{
+  "name": "rea-schedule-ics",
+  "version": "1.0.0",
+  "description": "Парсер расписания rasp.rea.ru → ICS-фид для Apple Calendar",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/scraper.js",
+    "build": "node src/index.js"
+  },
+  "dependencies": {
+    "ics": "^3.7.6",
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}
