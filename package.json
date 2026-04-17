@@ -5,11 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "scrape": "node src/scraper.js",
-    "build": "node src/index.js"
+    "build": "node src/index.js",
+    "scrape": "node src/scraper.js"
   },
   "dependencies": {
-    "ics": "^3.7.6",
     "playwright": "^1.49.0"
   },
   "engines": {
